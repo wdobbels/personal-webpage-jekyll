@@ -1,0 +1,42 @@
+- title: "Thinking, fast and slow"
+  author: Daniel Kahneman
+  fiction: false
+  image: thinking-fast-and-slow.jpg
+  description: "This book provides a model of two modes of thinking. A fast-thinking part, that happens automatically (e.g. recognizing faces), but suffers from strong biases. And a slower, more delibarate path, that is needed to correct these biases. Understanding these biases helps the reader recognize them. The book also discusses behavioral economics, and provides a model that does not expect people to be rational."
+
+- title: "How to win friends and influence people"
+  author: Dale Carnegie
+  fiction: false
+  image: thinking-fast-and-slow.jpg
+  description: "This book, originally published in 1936, contains timeless advice on dealing with people. This book teaches you effective communication: being genuinely interested in the other person, and a good listener. It teaches you the magic of praising people and the harm that criticizing them does. Contrary to what the title may suggest, it is not about manipulating people, but instead about viewing the world from their perspective."
+
+- title: "A random walk down wall street"
+  author: Burton G. Malkiel
+  fiction: false
+  image: thinking-fast-and-slow.jpg
+  description: "This book describes the efficient market hypothesis, which assumes that all currently available knowledge about a company is already reflected in its stock price. It compares it against other theories, such as technical and fundamental analysis. Even if the market is not perfectly efficient, it is true that very little people can consistently outperform the market. In practice, we indeed see that even blindfolded monkeys throwing darts at a newspaper's financial pages pick better stocks than 50% of well-paid portfolio managers (so-called experts). If you look at the best performing funds in a certain year, the next year they will statistically only perform average."
+
+- title: "Why we sleep"
+  author: "Mathew Walker"
+  fiction: false
+  image: thinking-fast-and-slow.jpg
+  description: >
+      This book describes the function of sleep, and the problems that are caused by a lack of sleep. It explains the two main drivers that cause sleepiness: sleep pressure (adenosine) builds up while you are awake, and is broken down when you are sleeping. The circadian rhythm (a.k.a. the body clock) makes you sleepy at night and keeps you awake during the day. There are some concerns about the scientific accuracy (see e.g. <a href='https://guzey.com/books/why-we-sleep/'>this post</a>), but overall I still found it a good book.
+
+- title: The sword of truth
+  author: Terry Goodkind
+  fiction: true
+  image: thinking-fast-and-slow.jpg
+  description: "This series of fantasy books follows protagonist Richard Cypher and others on their quest to defeat opressors that seek to take control of the world. In my opinion it has a very interesting take on sorcery, and overall the story is very good."
+
+- title: The hitchhiker's guide to the galaxy
+  author: Douglas Adams
+  fiction: true
+  image: thinking-fast-and-slow.jpg
+  description: "A totally wacky universe described by an appropriately comical writing: this book is just a pleasure to read. It all starts with the destruction of planet earth, in order to make way for a hyperspace bypass." 
+
+- title: Contact
+  author: Carl Sagan
+  fiction: true
+  image: thinking-fast-and-slow.jpg
+  description: "What happens if, besides all the radio emission from pulsars, quasars and other astronomical objects, we detect a signal that can not be produced by a natural phenomenon: a series of prime numbers. But there might be more to the message..."

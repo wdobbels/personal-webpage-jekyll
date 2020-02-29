@@ -1,0 +1,15 @@
+- title: Predicting the global far-infrared SED of galaxies
+  img: slide_globalfir_43.jpg
+  href: globalfir.html
+- title: Predicting far-infrared images of galaxies
+  img: slide_resolvedfir_43.jpg
+  href: resolvedfir.html
+- title: A morphology-based galaxy stellar mass estimate
+  img: slide_hackathon_43.jpg
+  href: morphological-mstar.html
+- title: Dynamic grids in radiative transfer
+  img: slide_dynamicgrids_43.jpg
+  href: dynamic-grids.html
+- title: Machine learning in cosmological simulations
+  img: slide_eagle_43.jpg
+  href: ml-cosmological-simulations.html

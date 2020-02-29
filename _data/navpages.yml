@@ -1,0 +1,9 @@
+- codename: index
+  displayname: Home
+  url: /index.html
+- codename: research
+  displayname: Research
+  url: /research/
+- codename: projects
+  displayname: Projects
+  url: /projects.html

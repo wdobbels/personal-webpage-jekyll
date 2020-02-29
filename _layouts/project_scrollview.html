@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% comment %}
+    The old way, by looping over all data files (before realizing you can index based on page.datafile):
+
+    COMMENT
+    site.data is a dictionary with all the data files in /_data
+    the key is the name of the data file (without .yml)
+    the value is the data in the file
+    when looping over a dictionary, the key is stored as index 0, and value as index 1
+
+    CODE
+    {% for datafiles in site.data %}
+        {% if datafiles[0] == page.datafile %}
+            {% assign projectdata = datafiles[1] %}
+        {% endif %}
+    {% endfor %}
+{% endcomment %}
+
+{% assign projectdata = site.data[page.datafile] %}
+
+<div id="project-container" class="project-container">
+{% for project in projectdata %}
+    {% include project.html data=project %}
+{% endfor %}
+</div>
+<script src="/js/project-scroller.js"></script>

@@ -1,0 +1,18 @@
+---
+layout: default
+title: Research - Wouter Dobbels
+navtitle: research
+permalink: /research/
+stylefile: /css/research.css
+---
+
+<section class="introduction">
+    <h1>Research in computational astrophysics</h1>
+    <p>My research mainly involves studying dust in galaxies. Central to my PhD thesis is the use of machine learning techniques to circumvent a lack of data. Galaxies that have been observed through a broad range of wavelengths (and hence have accurately determined properties) are used as training examples. The machine learning pipeline learns to predict accurate properties, even for galaxies with less observational constraints.</p>
+</section>
+
+<div id="research-container" class="project-container">
+    {% for project in site.data.research %}
+        {% include hovercard.html data=project %}
+    {% endfor %}
+</div>

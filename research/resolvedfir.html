@@ -1,0 +1,42 @@
+---
+layout: slides
+title: Predicting FIR images - Wouter Dobbels
+---
+
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h2>Predicting far-infrared images of galaxies</h2>
+            <h4>using machine learning techniques</h4>
+        </section>
+        <section>
+            <h2>Galaxies emit across the whole wavelength spectrum</h2>
+        </section>
+        <section>
+            <h3>In general, more energetic events happen at shorter wavelengths</h3>
+            <ul>
+                <li>ultraviolet (UV): young, massive stars</li>
+                <li>optical to near-infrared (NIR): older stars</li>
+                <li>mid-to-far-infrared (MIR-FIR): interstellar dust</li>
+            </ul>
+        </section>
+
+        <section>
+            <img src="/assets/img/research/resolvedfir/M31_spectrum.jpg" alt="Andromeda from X-ray to radio">
+            <h4>Our neighbor Andromeda, from high-energy X-ray to low-energy radio</h4>
+        </section>
+
+        <section>
+            <h4>My goal is to <span class="highlight">use the UV-FIR pixels of Andromeda as a training set</span>, in order to learn a mapping from UV-MIR (input) to FIR (output).</h4>
+        </section>
+        <section>
+            <h4>Then, even for galaxies where we do not have FIR data, I can predict the FIR image.</h4>
+            <h4>I can use the galaxies where FIR is available as a test set.</h4>
+        </section>
+        <section>
+            <h4>This project is currently in progress...</h4>
+            <p>If you are interested, please contact me!</p>
+            <p>The project is similar to the one on <a href="http://localhost:4000/research/globalfir.html">FIR prediction on global scales</a>.</p>
+        </section>
+    </div>
+</div>

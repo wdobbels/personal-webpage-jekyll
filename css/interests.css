@@ -1,0 +1,137 @@
+section {
+    position: relative;
+    min-height: 600px;
+    padding: 30px 3vw 30px 8vw;
+}
+
+.side-title {
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    transform: rotate(-90deg) translate(50%, -50%);
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+}
+
+/* Gaming */
+
+.slides-container {
+    background-color: var(--darkest);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "slides fixed"
+        "slides changing";
+}
+
+.slides {
+    grid-area: slides;
+    min-width: 40%;
+}
+
+.fixed-text {
+    grid-area: fixed;
+}
+
+.sliding-text {
+    grid-area: changing;
+    min-height: 270px;
+}
+
+.glide__slide {
+    min-height: 500px;
+}
+
+.side-content {
+    flex-grow: 1;
+    padding: 0 2vw;
+}
+
+.flex-vert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-slide {
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(25%);
+}
+
+.arrow {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    background: none;
+    color: white;
+}
+
+.arrow:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/* Reading */
+
+.reading-container {
+    background-color: var(--darker);
+    display: flex;
+}
+
+.reading-list ul {
+    list-style-type: square;
+}
+
+.reading-list li {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.reading-list li.selected {
+    color: white;
+    cursor: auto;
+}
+
+.reading-list, .book-description {
+    width: 40%;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.book-description .title {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.book-description .author {
+    margin: 0 0 1rem;
+    font-style: italic;
+}
+
+/* Phones */
+@media (max-width: 768px) {
+    .slides-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+        grid-template-areas:
+        "fixed"
+        "slides"
+        "changing";
+    }
+}

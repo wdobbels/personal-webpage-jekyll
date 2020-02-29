@@ -1,0 +1,57 @@
+---
+layout: default
+revealjs: true
+---
+
+{{ content }}
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script> -->
+<script src="/revealjs/js/reveal.js"></script>
+<script>
+
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        embedded: true,
+        controlsLayout: 'edges',
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            { src: '/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '/revealjs/plugin/highlight/highlight.js' },
+            { src: '/revealjs/plugin/search/search.js', async: true },
+            { src: '/revealjs/plugin/zoom-js/zoom.js', async: true },
+            { src: '/revealjs/plugin/notes/notes.js', async: true }
+        ]
+    });
+    // Show .corner s of slide 0
+    Reveal.addEventListener( 'ready', function( event ) {
+        if (Reveal.isFirstSlide()) {
+            let currentCorners = document.querySelectorAll(`.corner[data-slideid="0"]`);
+            currentCorners.forEach( node => {
+                node.classList.add('show');
+            });
+        }
+    });    
+    
+    // On slide i: show .corner with data-slideid="i"
+    Reveal.addEventListener( 'slidechanged', function( event ) {
+        // Show corners of current slide
+        let currentCorners = document.querySelectorAll(`.corner[data-slideid="${event.indexh}"]`);
+        currentCorners.forEach( node => {
+            node.classList.add('show');
+        });
+        // Hide corners of other slides
+        let otherCorners = document.querySelectorAll(`.corner:not([data-slideid="${event.indexh}"])`);
+        otherCorners.forEach( node => {
+            node.classList.remove('show');
+        });        
+    } )
+
+</script>

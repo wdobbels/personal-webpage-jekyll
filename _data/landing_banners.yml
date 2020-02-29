@@ -1,0 +1,33 @@
+- title: Wouter Dobbels
+  image: /assets/img/indexpage/bg_M31nnet.jpg
+  text: PhD fellow - computational astrophysics
+  extraclasses: positioned-title center-text text-shadow
+
+- title: About me
+  image: /assets/img/indexpage/bg_illustristng.jpg
+  text: Already from a young age I was passionate about science and technology. This led me to persue a degree in physics and astronomy, which I completed in 2017. During my studies at Ghent University, I had a special interest in computational projects. I picked up some computer science courses and ended up doing computational astrophysics for my master's thesis. After completing my studies, I started a Ph.D. project, again in the astronomy group led by Prof. Maarten Baes. My main interests are physics, programming and machine learning, and my Ph.D. project reflects that.
+  sideimage: /assets/img/indexpage/profilepic2.jpg
+  extraclasses: dark-background
+
+- title: RESEARCH
+  image: /assets/img/indexpage/bg_M33.jpg
+  text: Astronomical research projects I have worked on
+  link: "/research"
+  extraclasses: text-shadow
+
+- title: PROJECTS
+  image: /assets/img/projects/bg_projects.jpg
+  text: View some of the projects I have completed throughout my life
+  link: "#"
+  extraclasses: text-shadow
+
+- title: Contact
+  image: /assets/img/indexpage/bg_contact.jpg
+  text: 'Feel free to contact me about anything!<br/><br/>
+
+<strong>E-mail:</strong> <a href="mailto:wouter.dobbels@ugent.be">wouter.dobbels@ugent.be</a> <br/>
+<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/wouter-dobbels-1b4180106/">profile</a> <br/>
+<strong>Office:</strong> Astronomical Observatory, Ghent, Belgium'
+  sideimage: /assets/img/indexpage/communicate.jpg
+  extraclasses: dark-background
+

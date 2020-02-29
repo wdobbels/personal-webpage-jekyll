@@ -1,0 +1,69 @@
+- title: Predicting the global far-infrared SED of galaxies
+  subtitle: Machine learning estimates of dust emission, using UV-MIR SED
+  content:
+    - title: Background.
+      text: Galaxies emit across the whole wavelength range, from the short-wavelength X-rays to the long-wavelength radio waves. If we measure the total light (sum of all pixels) emitted by a galaxy as a function of wavelength, we get what is known as the spectral energy distribution (SED). Stars emit mainly between the ultraviolet (UV) and near-infrared (NIR) wavelength regime. Dust partially obscures this starlight (e.g. the dark band across the Milky Way). This heats the dust (to about 25 K), which then emits at the much longer far-infrared (FIR) wavelengths.
+    - title: Goal.
+      text: "The FIR is crucial to measure the total dust mass and average dust temperature of a galaxy. The goal is to estimate the FIR emission (and hence the dust mass and temperature), based on the UV-MIR SED. We use a machine learning procedure: a neural network. This network is trained on a dataset where we have UV to FIR measurements, in order to produce a reasonable FIR prediction (with UV-MIR as input)."
+    - title: Results.
+      text: We can measure the dust luminosity, mass, and temperature estimated are clearly superior to an SED modelling technique. We investigate which wavelength bands contribute most to the prediction, where the model fails, and estimate an uncertainty for each individual prediction.
+    - title: Skills.
+      text: python, scikit-learn, pytorch, interactive plotting (plotly)
+  ADS: https://ui.adsabs.harvard.edu/abs/2019arXiv191006330D/abstract
+  pdf: https://arxiv.org/pdf/1910.06330.pdf
+  bgimg: slide_globalfir.jpg
+  type: Main PhD project (1)
+
+- title: Predicting the resolved far-infrared SED of galaxies
+  subtitle: Machine learning estimates of dust emission, using UV-MIR images
+  content: 
+    - title: Background.
+      text: This problem is similar to the one on global scales (see previous project), but on resolved scales.
+    - title: Goal.
+      text: For individual pixels, we try to predict the FIR based on the UV-MIR. We can use the Andromeda galaxy (about 20 000 pixels at FIR resolution) as a training set.
+    - title: Progress.
+      text: This project is currently in progress. If you are interested in collaborating, feel free to contact me!
+  bgimg: slide_resolvedfir.jpg
+  type: Main PhD project (2)
+
+- title: A morphology-based galaxy stellar mass estimate
+  subtitle: Estimating stellar mass using a single band observation
+  content:
+    - title: Background.
+      text: A traditional way to estimate the stellar mass of a galaxy is to use the spectral energy distribution (SED), and fit galaxy emission models. The stellar mass of the best-fitting models is then combined into a final estimate. This requires multiple observations, usually ranging from ultraviolet to near-infrared.
+    - title: Goal.
+      text: "Based on a dataset of 'standard' estimates, we can train a deep learning model to predict the stellar mass using only a single band observation. This leads to a 'grayscale' image as input. From this image, the morphology can give us useful information: spiral galaxies have younger stars, and hence a lower mass-to-light than elliptical galaxies."
+    - title: Results.
+      text: Morphology is a useful attribute when no colour information is available, but can not outperform colour methods on its own. When we combine the morphology features with global g- and i-band luminosities, we find an improved estimate compared to a model which does not make use of morphology.
+    - title: Skills.
+      text: deep learning (keras), image processing (opencv)
+  ADS: https://ui.adsabs.harvard.edu/abs/2019A%26A...624A.102D/abstract
+  pdf: https://arxiv.org/pdf/1903.05091.pdf
+  bgimg: slide_hackathon.jpg
+  type: Data science hackathon
+
+- title: Dynamic grids in radiative transfer
+  subtitle: Rebuilding the grid using temperature information
+  content:
+    - title: Background.
+      text: In Monte Carlo radiative transfer (MCRT), we trace the path of photon packages, from their birth (in stars or dust), through the scattering in the dust, to the final detection in an instrument. The dust distribution needs to be discretized on a grid. These grids are made at the start of the simulation, often placing more cells where the dust density is higher. 
+    - title: Goal.
+      text: In addition to the dust density, we also want to properly discretize the dust temperature. However, temperature information is calculated during the simulation. In this thesis, my goal is to rebuild the grid after a few million photon packages have been launched, in order to get a better dust temperature discretization.
+    - title: Results.
+      text: When there are large gradients in dust temperature, these dynamic grids lead to more accurate results, for a given number of cells. It is possible to mix density and temperature information, and combining both leads to a grid that works well on all tested cases.
+    - title: Skills.
+      text: Working with a large C++ codebase (<a href="http://www.skirt.ugent.be/root/_landing.html" target="_blank">SKIRT</a>), using remote computers, shiny (R framework), writing a thesis
+  bgimg: slide_dynamicgrids.jpg
+  type: Master's thesis
+
+- title: Machine learning on cosmological simulations
+  subtitle: Using the EAGLE simulations for a better ground truth
+  content:
+    - title: Background.
+      text: "Observations of galaxies are not perfect: both statistical as well as systematic uncertainties are present. Moreover, light is the only thing we observe from galaxies; properties like stellar mass need to be inferred from models."
+    - title: Outline.
+      text: I have supervised two Master thesis students that applied machine learning tools on the EAGLE simulations. These cosmological simulations trace stars, gas and dark matter throughout the evolution of the universe. These can be used to train machine learning models which can then be applied on real galaxies.
+    - title: <a href="https://lib.ugent.be/catalog/rug01:002782902" target="_blank">Machine learning as an alternative for SED fitting.</a>
+      text: In this work by Pieter Dewulf, the goal is to derive galaxy physical properties from a UV-FIR SED. We can reproduce the results of high-resolution SED fitting, but taking only a fraction of the computational time.
+  bgimg: slide_eagle.jpg
+  type: Supervision of Master's thesis

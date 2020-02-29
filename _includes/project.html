@@ -1,0 +1,13 @@
+<div class="project">
+    <div class="project-header" style="background-image: url(/assets/img/{{ page.datafile }}/{{ include.data.bgimg }});">
+        <div class="header-textbox">
+            <h1>{{ include.data.title }}</h1>
+            <h3>{{ include.data.subtitle }}</h3>
+        </div>
+    </div>
+    <div class="project-body">
+    {% for section in include.data.content %}
+        <p><strong>{{ section.title }}</strong> {{ section.text }}</p>
+    {% endfor %}
+    </div>
+</div>
