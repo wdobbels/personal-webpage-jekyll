@@ -2,19 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-evenly; */
-    margin-left: 5vw;
+    margin-left: 3vw;
     /* border: 3px solid pink; */
 }
 
 .hover-card {
     position: relative;
-    height: 22.5vw;
-    width: 30vw;
+    height: 23.5vw;
+    width: 31.33vw;
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
     /* Border as padding (else need percentag bg crop) */
-    border: 10px solid black;
+    border: 10px solid var(--darkest);
 }
 
 .hover-overlay {
@@ -40,11 +40,26 @@
 }
 
 .introduction {
-    max-width: 800px;
+    max-width: 825px;
     margin: 40px auto;
+    padding: 0 25px;
     text-align: justify;
 }
 
 .introduction h1 {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav h2 {
+        left: auto;
+        transform: none;
+        text-align: center;
+        position: relative;
+        display: block;
+    }
+    .hover-card {
+        width: 45vw;
+        height: 33.75vw;
+    }
 }

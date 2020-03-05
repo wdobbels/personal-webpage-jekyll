@@ -1,23 +1,12 @@
 (function(){
-    const titleEl = document.querySelector(".book-description .title");
-    const authorEl = document.querySelector(".book-description .author");
     const descriptionEl = document.querySelector(".book-description .description");
-    const listItems = document.querySelectorAll(".reading-list li");
+    const bookImage = document.getElementById("book-cover");
+    const books = document.querySelectorAll(".book-stack .linkbox");
 
-    function selectBook(target) {
-        listItems.forEach((listItem) => {
-            listItem.classList.remove("selected");
-        });
-        target.classList.add("selected");
-        titleEl.textContent = target.dataset.title;
-        authorEl.textContent = "By " + target.dataset.author;
-        descriptionEl.innerHTML = target.dataset.description;
-    }
-    listItems.forEach((listItem) => {
-        listItem.onclick = (e) => {
-            selectBook(e.target);
+    books.forEach((book) => {
+        book.onclick = (e) => {
+            descriptionEl.innerHTML = e.target.dataset.description;
+            bookImage.src = "/assets/img/interests/books/" + e.target.dataset.image;
         }
     });
-
-    listItems[0].click();  // select first
 })()

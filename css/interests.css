@@ -6,9 +6,12 @@ section {
 
 .side-title {
     position: absolute;
-    left: -16px;
+    /* left: -16px; */
+    /* transform: rotate(-90deg) translate(50%, -50%); */
     top: 50%;
-    transform: rotate(-90deg) translate(50%, -50%);
+    writing-mode: vertical-lr;
+    transform: rotate(180deg) translateY(50%);
+    left: 10px;
     margin: 0;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
@@ -19,7 +22,7 @@ section {
 /* Gaming */
 
 .slides-container {
-    background-color: var(--darkest);
+    background-color: var(--darker);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 40px;
@@ -90,42 +93,99 @@ section {
 /* Reading */
 
 .reading-container {
+    background-color: var(--darkest);
+    min-height: 750px;
+}
+
+.reading-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reading-images {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    /* max-height: 600px; */
+}
+
+.book-stack-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
+.book-stack {
+    position: relative;
+}
+
+.book-stack img {
+    display: block;
+    width: 100%;
+}
+
+.linkbox {
+    position: absolute;
+    /* border: 2px solid red; */
+}
+
+.linkbox:hover {
+    cursor: pointer;
+    backdrop-filter: brightness(200%) saturate(150%);
+}
+
+.book-cover-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+
+img.book-cover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    height: 100%;
+}
+
+/* More interests */
+
+#more {
     background-color: var(--darker);
+}
+
+#more-container {
     display: flex;
 }
 
-.reading-list ul {
-    list-style-type: square;
+.more-element {
+    width: 400px;
+    padding: 0 15px;
 }
 
-.reading-list li {
-    color: var(--primary);
-    cursor: pointer;
+.more-element img {
+    display: block;
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 80% 50%;
 }
 
-.reading-list li.selected {
-    color: white;
-    cursor: auto;
-}
-
-.reading-list, .book-description {
-    width: 40%;
-    flex-grow: 1;
-    margin: 0 20px;
-}
-
-.book-description .title {
-    margin: 1rem 0 0.5rem;
-    font-size: 1.5rem;
-}
-
-.book-description .author {
-    margin: 0 0 1rem;
-    font-style: italic;
-}
-
-/* Phones */
+/* Other resolutions */
 @media (max-width: 768px) {
+    .side-title {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .reading-content, .fixed-text {
+        margin-top: 50px;
+    }
+
     .slides-container {
         grid-template-columns: 1fr;
         grid-template-rows: none;
@@ -133,5 +193,27 @@ section {
         "fixed"
         "slides"
         "changing";
+    }
+
+    #more-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .more-element {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 960px) {
+    .book-cover-container {
+        height: auto;
+        min-width: 0;
+        flex-shrink: 2;
+    }
+
+    img.book-cover {
+        height: auto;
+        width: 100%;
     }
 }

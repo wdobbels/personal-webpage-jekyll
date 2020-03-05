@@ -7,3 +7,6 @@
 - codename: projects
   displayname: Projects
   url: /projects.html
+- codename: interests
+  displayname: Interests
+  url: /interests.html

@@ -3,40 +3,47 @@
   fiction: false
   image: thinking-fast-and-slow.jpg
   description: "This book provides a model of two modes of thinking. A fast-thinking part, that happens automatically (e.g. recognizing faces), but suffers from strong biases. And a slower, more delibarate path, that is needed to correct these biases. Understanding these biases helps the reader recognize them. The book also discusses behavioral economics, and provides a model that does not expect people to be rational."
+  box: [0, 15.5, 9, 11]  # top, height, left, right
 
 - title: "How to win friends and influence people"
   author: Dale Carnegie
   fiction: false
-  image: thinking-fast-and-slow.jpg
+  image: how-to-win-friends.jpg
   description: "This book, originally published in 1936, contains timeless advice on dealing with people. This book teaches you effective communication: being genuinely interested in the other person, and a good listener. It teaches you the magic of praising people and the harm that criticizing them does. Contrary to what the title may suggest, it is not about manipulating people, but instead about viewing the world from their perspective."
+  box: [15.5, 7, 11, 14]
 
 - title: "A random walk down wall street"
   author: Burton G. Malkiel
   fiction: false
-  image: thinking-fast-and-slow.jpg
+  image: random-walk.jpg
   description: "This book describes the efficient market hypothesis, which assumes that all currently available knowledge about a company is already reflected in its stock price. It compares it against other theories, such as technical and fundamental analysis. Even if the market is not perfectly efficient, it is true that very little people can consistently outperform the market. In practice, we indeed see that even blindfolded monkeys throwing darts at a newspaper's financial pages pick better stocks than 50% of well-paid portfolio managers (so-called experts). If you look at the best performing funds in a certain year, the next year they will statistically only perform average."
+  box: [22.5, 14, 2, 6]
 
 - title: "Why we sleep"
   author: "Mathew Walker"
   fiction: false
-  image: thinking-fast-and-slow.jpg
+  image: why-we-sleep.jpg
   description: >
-      This book describes the function of sleep, and the problems that are caused by a lack of sleep. It explains the two main drivers that cause sleepiness: sleep pressure (adenosine) builds up while you are awake, and is broken down when you are sleeping. The circadian rhythm (a.k.a. the body clock) makes you sleepy at night and keeps you awake during the day. There are some concerns about the scientific accuracy (see e.g. <a href='https://guzey.com/books/why-we-sleep/'>this post</a>), but overall I still found it a good book.
+      This book describes the function of sleep, and the problems that are caused by a lack of sleep. It explains the two main drivers that cause sleepiness: sleep pressure (adenosine) builds up while you are awake, and is broken down when you are sleeping. The circadian rhythm (a.k.a. the body clock) makes you sleepy at night and keeps you awake during the day. There are some concerns about the scientific accuracy (see e.g. <a href='https://guzey.com/books/why-we-sleep/'>this post</a>), but overall it was still a valuable book for me.
+  box: [36.5, 8.5, 7.5, 16]
 
 - title: The sword of truth
   author: Terry Goodkind
   fiction: true
-  image: thinking-fast-and-slow.jpg
+  image: sword-of-truth.jpg
   description: "This series of fantasy books follows protagonist Richard Cypher and others on their quest to defeat opressors that seek to take control of the world. In my opinion it has a very interesting take on sorcery, and overall the story is very good."
+  box: [45, 17, 13, 23]
 
 - title: The hitchhiker's guide to the galaxy
   author: Douglas Adams
   fiction: true
-  image: thinking-fast-and-slow.jpg
+  image: hitchhikers-guide.jpg
   description: "A totally wacky universe described by an appropriately comical writing: this book is just a pleasure to read. It all starts with the destruction of planet earth, in order to make way for a hyperspace bypass." 
+  box: [62, 8.5, 7, 20]
 
 - title: Contact
   author: Carl Sagan
   fiction: true
-  image: thinking-fast-and-slow.jpg
+  image: contact.jpg
   description: "What happens if, besides all the radio emission from pulsars, quasars and other astronomical objects, we detect a signal that can not be produced by a natural phenomenon: a series of prime numbers. But there might be more to the message..."
+  box: [70.5, 12.5, 14.5, 23]

@@ -19,9 +19,6 @@ let teleMargin = 0.9 * firstProject.offsetWidth;
 let preventTeleport = false;
 let preventTeleportTimeout = 50;
 
-console.log("LAST SCROLL POSITION (RIGHT)", lastProject.offsetLeft + lastProject.offsetWidth + teleMargin);
-console.log("FIRST SCROLL POSITION", firstProject.offsetLeft - teleMargin);
-
 function overLeftBoundary() {
     // Did we scroll more left than the leftmost boundary?
     return container.scrollLeft < firstProject.offsetLeft - teleMargin;
@@ -49,32 +46,20 @@ function scrollIfNeeded() {
     // Last project is over halfway out of screen (when scrolling to right) -> scroll to first
     if (overRightBoundary()) {
         preventSnap()
-        let temp = container.scrollLeft;
         let cloneOffset = firstCloneBack.offsetLeft - container.scrollLeft;
         // Preserve firstClone offset when teleporting to start
         // cloneOffset = firstProject.offsetLeft - container.new_scrollLeft
         container.scrollLeft = firstProject.offsetLeft - cloneOffset;
-        console.log("TELEPORT TO START - scrollLeft from", temp, "TO", container.scrollLeft,
-                    "scrollRight from", temp + container.offsetWidth, 'to', container.scrollLeft + container.offsetWidth);
-        console.log("WILL TELEPORT TO START", overRightBoundary());
-        console.log("WILL TELEPORT TO END", overLeftBoundary());
         setTimeout(enableSnap, preventTeleportTimeout)
     }
     // First project is getting out of screen (when scrolling to left) -> scroll to last
     if (overLeftBoundary()) {
         preventSnap()
-        let temp = container.scrollLeft;
         let firstProjectOffset = firstProject.offsetLeft - container.scrollLeft;
         // firstProjectOffset = firstCloneBack.offsetLeft - container.new_scrollLeft
         container.scrollLeft = firstCloneBack.offsetLeft - firstProjectOffset;
-        console.log("TELEPORT TO END - scrollLeft from", temp, "TO", container.scrollLeft,
-                    "scrollRight from", temp + container.offsetWidth, 'to', container.scrollLeft + container.offsetWidth);
-        console.log("WILL TELEPORT TO START", overRightBoundary());
-        console.log("WILL TELEPORT TO END", overLeftBoundary());
         setTimeout(enableSnap, preventTeleportTimeout)
     }
 }
 
 container.addEventListener('scroll', scrollIfNeeded);
-
-console.log(container);
