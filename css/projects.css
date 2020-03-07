@@ -37,3 +37,22 @@
 .disable-snap {
     scroll-snap-type: none !important;
 }
+
+.arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary);
+    background: none;
+    border: none;
+    -webkit-text-stroke: 3px black;
+}
+
+.arrow-left {
+    left: 9.5vw;
+}
+
+.arrow-right {
+    right: 9.5vw;
+}

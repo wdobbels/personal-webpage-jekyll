@@ -4,11 +4,6 @@
     background-size: cover;
     background-position: center center;
     border-bottom: 5px solid black;
-    filter: grayscale(40%);
-}
-
-.banner:hover {
-    filter: none;
 }
 
 .banner-textbox {
@@ -94,8 +89,6 @@ strong {
     margin-right: 8px;
 }
 
-@media (hover: none) {
-    .banner {
-        filter: none;
-    }
+.icons img:hover {
+    filter: invert(100%) brightness(150%);
 }

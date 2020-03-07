@@ -63,3 +63,26 @@ function scrollIfNeeded() {
 }
 
 container.addEventListener('scroll', scrollIfNeeded);
+
+// Arrows
+const arrowLeft = document.querySelector('.arrow-left');
+const arrowRight = document.querySelector('.arrow-right');
+
+function scrollRight() {
+    container.scrollTo({
+        top: 0,
+        left: container.scrollLeft + firstProject.offsetWidth,
+        behavior: 'smooth'
+    });
+}
+
+function scrollLeft() {
+    container.scrollTo({
+        top: 0,
+        left: container.scrollLeft - firstProject.offsetWidth,
+        behavior: 'smooth'
+    });
+}
+
+arrowRight.addEventListener('click', scrollRight);
+arrowLeft.addEventListener('click', scrollLeft);
