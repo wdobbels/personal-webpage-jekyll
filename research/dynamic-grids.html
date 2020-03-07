@@ -13,17 +13,17 @@ title: Predicting FIR images - Wouter Dobbels
         <section>
             <h4>Cosmological simulations follow physical particles through 3D space</h4>
             <video class="largevid" autoplay>
-                <source data-src="/assets/video/firebox.webm" type="video/webm" />
-                <source data-src="/assets/video/firebox.mp4" type="video/mp4" />
+                <source data-src="{% link /assets/video/firebox.webm %}" type="video/webm" />
+                <source data-src="{% link /assets/video/firebox.mp4 %}" type="video/mp4" />
             </video>
         </section>
         <section>
             <h4>However, for real galaxies we only see the projection on the sky</h4>
-            <img data-src="/assets/img/research/dynamicgrids/NGC1365.jpg" alt="NGC1365, a barred spiral galaxy">
+            <img data-src="{% link /assets/img/research/dynamicgrids/NGC1365.jpg %}" alt="NGC1365, a barred spiral galaxy">
         </section>
         <section>
             <h4>With radiative transfer, we can canculate what a simulated galaxy would look like</h4>
-            <img data-src="/assets/img/research/globalfir/slide_eagle_43.jpg" alt="">
+            <img data-src="{% link /assets/img/research/globalfir/slide_eagle_43.jpg %}" alt="">
             <p class="small">The top right inset shows such a radiative transfer rendering</p>
         </section>
         <section>
@@ -44,7 +44,7 @@ title: Predicting FIR images - Wouter Dobbels
             <p class="small">After all, that is where most of the interesting scattering happens</p>
         </section>
         <section>
-            <img data-src="/assets/img/research/dynamicgrids/agn-grid.jpg" alt="dust grid for an AGN torus">
+            <img data-src="{% link /assets/img/research/dynamicgrids/agn-grid.jpg %}" alt="dust grid for an AGN torus">
             <p class="small">Left: slice through a dusty torus with clumps. Right: octree dust grid.</p>
         </section>
         <section>
@@ -62,12 +62,12 @@ title: Predicting FIR images - Wouter Dobbels
         </section>
         <section>
             <p>This is a test case where two spheres are illuminated from a corner.</p>
-            <img data-src="/assets/img/research/dynamicgrids/grid-comparison.jpg" alt="comparison of different grids">
+            <img data-src="{% link /assets/img/research/dynamicgrids/grid-comparison.jpg %}" alt="comparison of different grids">
             <p class="small">The reference simulation uses a lot more cells, and is used as the ground truth</p>
             <p class="small">The other three grids use 30000 cells.</p>
         </section>
         <section>
-            <img data-src="/assets/img/research/dynamicgrids/grid-comparison.jpg" alt="comparison of different grids">
+            <img data-src="{% link /assets/img/research/dynamicgrids/grid-comparison.jpg %}" alt="comparison of different grids">
             <p>Combining dust and temperature information (right column) leads to the best results.</p>
         </section>
         <section>

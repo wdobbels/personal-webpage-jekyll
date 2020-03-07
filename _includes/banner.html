@@ -1,7 +1,7 @@
 {% if include.data.link %}
-<a class="banner-link" href={{ include.data.link }}>
+<a class="banner-link" href={{ include.data.link | relative_url }}>
 {% endif %}
-<div class="banner flex {{ include.data.extraclasses }}" style="background-image: url({{ include.data.image }});">
+<div class="banner flex {{ include.data.extraclasses }}" style="background-image: url({{ include.data.image | relative_url }});">
     <div class="banner-textbox">
         <h1>{{ include.data.title }}</h1>
         {% if include.data.text %}
@@ -9,7 +9,7 @@
         {% endif %}
     </div>
     {% if include.data.sideimage %}
-    <img class="side-image" src={{include.data.sideimage}}>
+    <img class="side-image" src={{ include.data.sideimage | relative_url }}>
     {% endif %}
 </div>
 {% if include.data.link %}

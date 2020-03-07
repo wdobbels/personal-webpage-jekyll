@@ -18,16 +18,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Wouter Dobbels
+email: wouter.dobbels@ugent.be
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  Personal web page of Wouter Dobbels. I am phd fellow, researching
+  computational astrophysics at Ghent University, Belgium.
+# When changing the baseurl (no longer hosting on ugent), make
+# sure to change _data/index-banners.yml : the icons have a
+# hardcoded baseurl (liquid not available inside yml).
+baseurl: "/~wdobbels" # the subpath of your site, e.g. /blog
+
+# When running locally using bundle exec jekyll serve
+livereload: true
 
 # Build settings
 #theme: minima

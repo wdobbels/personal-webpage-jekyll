@@ -4,8 +4,8 @@ title: Interests - Wouter Dobbels
 stylefile: /css/interests.css
 ---
 
-<link rel="stylesheet" href="/glide/dist/css/glide.core.min.css">
-<link rel="stylesheet" href="/glide/dist/css/glide.theme.min.css">
+<link rel="stylesheet" href="{% link /glide/dist/css/glide.core.min.css %}">
+<link rel="stylesheet" href="{% link /glide/dist/css/glide.theme.min.css %}">
 <script src="https://kit.fontawesome.com/2aa4864d42.js" crossorigin="anonymous"></script>
 
 {% assign ngames = site.data.games.size %}
@@ -16,7 +16,7 @@ stylefile: /css/interests.css
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                     {% for game in site.data.games %}
-                    <li class="glide__slide img-slide" style="background-image: url(/assets/img/interests/games/{{ game.image }})" data-name="{{ game.name }}" data-description="{{ game.description }}"></li>
+                    <li class="glide__slide img-slide" style="background-image: url({{ '/assets/img/interests/games/' | append: game.image | relative_url }})" data-name="{{ game.name }}" data-description="{{ game.description }}"></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -45,14 +45,14 @@ stylefile: /css/interests.css
         <div class="reading-images">
             <div class="book-stack-container">
                 <div class="book-stack">
-                    <img src="/assets/img/interests/books/sideview.png" alt="Stack of my favourite books">
+                    <img src="{% link /assets/img/interests/books/sideview.png %}" alt="Stack of my favourite books">
                     {% for book in site.data.reading %}
                     <div class="linkbox" data-title="{{ book.title }}" data-description="{{ book.description }}" data-image="{{ book.image }}" style="top: {{ book.box[0] }}%; height: {{ book.box[1] }}%; left: {{ book.box[2] }}%; right: {{ book.box[3] }}%;"></div>
                     {% endfor %}
                 </div>
             </div>
             <div class="book-cover-container">
-                <img id="book-cover" class="book-cover" src="/assets/img/interests/books/select-book.png" alt="book cover">
+                <img id="book-cover" class="book-cover" src="{% link /assets/img/interests/books/select-book.png %}" alt="book cover">
             </div>
         </div>
         <div class="book-description">
@@ -65,13 +65,13 @@ stylefile: /css/interests.css
     <div id="more-container">
         {% for interest in site.data.more-interests %}
         <div class="more-element">
-            <img src="/assets/img/interests/more/{{ interest.image }}" alt="{{ interest.title }}">
+            <img src="{{ '/assets/img/interests/more/' | append: interest.image | relative_url }}" alt="{{ interest.title }}">
             <h2>{{ interest.title }}</h2>
             <p>{{ interest.description }}</p>
         </div>
         {% endfor %}
     </div>
 </section>
-<script src="/glide/dist/glide.min.js"></script>
-<script src="/js/glide-changetext.js"></script>
-<script src="/js/select-listitem.js"></script>
+<script src="{% link /glide/dist/glide.min.js %}"></script>
+<script src="{% link /js/glide-changetext.js %}"></script>
+<script src="{% link /js/select-listitem.js %}"></script>

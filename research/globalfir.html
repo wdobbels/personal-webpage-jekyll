@@ -12,7 +12,7 @@ title: Predicting global FIR - Wouter Dobbels
 
         <section>
             <h3>Galaxies emit across the whole wavelength spectrum</h3>
-            <img data-src="/assets/img/research/globalfir/M31-composite.jpg" alt="composite view of M31">
+            <img data-src="{% link /assets/img/research/globalfir/M31-composite.jpg %}" alt="composite view of M31">
             <p><i>Andromeda from X-ray to far-infrared (FIR)</i></p>
         </section>
 
@@ -22,28 +22,28 @@ title: Predicting global FIR - Wouter Dobbels
 
         <section>
             <h3>This is an example SED</h3>
-            <img data-src="/assets/img/research/globalfir/sed.jpg" alt="example SED">
+            <img data-src="{% link /assets/img/research/globalfir/sed.jpg %}"" alt="example SED">
             <p class="small">Hotter objects (such as young stellar populations, with temperatures above 10 000 K) emit at shorter wavelengths (i.e. higher photon energies) than colder objects (e.g. dust at around 20 K)</p>
         </section>
 
         <section>
             <h3>Stars are the primary source of emission</h3>
-            <img data-src="/assets/img/research/globalfir/sed_stars.jpg" alt="example stellar SED">
+            <img data-src="{% link /assets/img/research/globalfir/sed_stars.jpg %}" alt="example stellar SED">
         </section>
 
         <section>
             <h3>However, their emission is partially absorbed by dust</h3>
-            <img data-src="/assets/img/research/globalfir/attenuation.jpg" alt="attenuation">
+            <img data-src="{% link /assets/img/research/globalfir/attenuation.jpg %}" alt="attenuation">
         </section>
 
         <section>
             <h3>You might know this absorption from the Milky Way...</h3>
-            <img data-src="/assets/img/research/globalfir/milky_way.jpeg" alt="milky way">
+            <img data-src="{% link /assets/img/research/globalfir/milky_way.jpeg %}" alt="milky way">
         </section>
 
         <section>
             <h3>...but it can be very prominent in other galaxies as well</h3>
-            <img data-src="/assets/img/research/globalfir/M64.jpg" alt="M64">
+            <img data-src="{% link /assets/img/research/globalfir/M64.jpg %}" alt="M64">
             <p>This is M64, the "black eye galaxy"</p>
         </section>
 
@@ -54,7 +54,7 @@ title: Predicting global FIR - Wouter Dobbels
 
         <section>
             <h3>This is known as the dust energy balance</h3>
-            <img data-src="/assets/img/research/globalfir/dust-emission.jpg" alt="dust energy balance">
+            <img data-src="{% link /assets/img/research/globalfir/dust-emission.jpg %}" alt="dust energy balance">
         </section>
 
         <section>
@@ -64,13 +64,13 @@ title: Predicting global FIR - Wouter Dobbels
         
         <section>
             <h3>Instead, we often observe through a few broadbands, like this:</h3>
-            <img data-src="/assets/img/research/globalfir/observed-sed.jpg" alt="">
+            <img data-src="{% link /assets/img/research/globalfir/observed-sed.jpg %}" alt="">
             <p class="small">This galaxy is quite close (~100 million light years), and hence the errors are small: for many galaxies the observations are of lower quality.</p>
         </section>
 
         <section>
             <h3>Now, we can fit a model through the observed fluxes</h3>
-            <img data-src="/assets/img/research/globalfir/observed-sed-fit.jpg" alt="">
+            <img data-src="{% link /assets/img/research/globalfir/observed-sed-fit.jpg %}" alt="">
             <p>Energy balance can help constrain the models</p>
         </section>
 
@@ -81,7 +81,7 @@ title: Predicting global FIR - Wouter Dobbels
 
         <section>
             <h3>For many galaxies, we lack FIR observations.</h3>
-            <img data-src="/assets/img/research/globalfir/missing-fir.jpg" alt="">
+            <img data-src="{% link /assets/img/research/globalfir/missing-fir.jpg %}" alt="">
         </section>
 
         <section>
@@ -115,18 +115,18 @@ title: Predicting global FIR - Wouter Dobbels
 
         <section>
             <h3>Some of the predictions (<span style="color: orange">orange</span>) compared to the ground truth (<span style="color: red">red</span>)</h3>
-            <img data-src="/assets/img/research/globalfir/example_seds_normal.png" alt="">
+            <img data-src="{% link /assets/img/research/globalfir/example_seds_normal.png %}" alt="">
             <p>We take the 30th, 50th and 70th percentile when ordering by prediction quality (RMSE)</p>
         </section>
 
         <section>
             <h3>Dust properties: predicted vs true</h3>
-            <img data-src="/assets/img/research/globalfir/truevspred_nnet_props.png" alt="">
+            <img data-src="{% link /assets/img/research/globalfir/truevspred_nnet_props.png %}" alt="">
         </section>
 
         <section>
             <h3>FIR fluxes: predicted vs true</h3>
-            <img data-src="/assets/img/research/globalfir/truevspred_nnet_fluxes.png" alt="">
+            <img data-src="{% link /assets/img/research/globalfir/truevspred_nnet_fluxes.png %}" alt="">
         </section>
 
         <section>

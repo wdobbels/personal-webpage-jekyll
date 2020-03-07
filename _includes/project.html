@@ -1,5 +1,5 @@
 <div class="project">
-    <div class="project-header" style="background-image: url(/assets/img/{{ page.datafile }}/{{ include.data.bgimg }});">
+    <div class="project-header" style="background-image: url({{ '/assets/img/' | append: page.datafile | append: '/' | append: include.data.bgimg | relative_url}});">
         <div class="header-textbox">
             <h1>{{ include.data.title }}</h1>
             <h3>{{ include.data.subtitle }}</h3>

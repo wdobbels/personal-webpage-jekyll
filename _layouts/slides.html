@@ -6,7 +6,7 @@ revealjs: true
 {{ content }}
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script> -->
-<script src="/revealjs/js/reveal.js"></script>
+<script src="{% link /revealjs/js/reveal.js %}"></script>
 <script>
 
     // More info https://github.com/hakimel/reveal.js#configuration
@@ -22,12 +22,12 @@ revealjs: true
 
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [
-            { src: '/revealjs/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '{% link /revealjs/plugin/markdown/marked.js %}', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
             { src: '/revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: '/revealjs/plugin/highlight/highlight.js' },
-            { src: '/revealjs/plugin/search/search.js', async: true },
-            { src: '/revealjs/plugin/zoom-js/zoom.js', async: true },
-            { src: '/revealjs/plugin/notes/notes.js', async: true }
+            { src: '{% link /revealjs/plugin/highlight/highlight.js %}' },
+            { src: '{% link /revealjs/plugin/search/search.js %}', async: true },
+            { src: '{% link /revealjs/plugin/zoom-js/zoom.js %}', async: true },
+            { src: '{% link /revealjs/plugin/notes/notes.js %}', async: true }
         ]
     });
     // Show .corner s of slide 0

@@ -1,9 +1,9 @@
 - title: "Guitar & bass"
   image: guitar.jpg
-  description: "Started learning acoustic guitar at the age of 9, later switched mostly to electric guitar and bass. Now I mostly play via <a href='https://rocksmith.ubisoft.com/rocksmith/en-us/home/'>rocksmith</a>."
+  description: "Started learning acoustic guitar at the age of 9, later switched mostly to electric guitar and bass. Now I mostly play via <a href='https://rocksmith.ubisoft.com/rocksmith/en-us/home/' target='_blank'>rocksmith</a>."
 - title: Game development
   image: buzzball.jpg
-  description: If I have some spare time, I like spending it in the unity game dev platform. Here's <a href='https://harry-muana.itch.io/buzzball'>my first released game</a>!
+  description: If I have some spare time, I like spending it in the unity game dev platform. Here's <a href='https://harry-muana.itch.io/buzzball' target='_blank'>my first released game</a>!
 - title: Programming
   image: programming.jpg
   description: Besides doing a lot of programming during my day job, I like programming in my free time as well. I'm also interested in web dev.
