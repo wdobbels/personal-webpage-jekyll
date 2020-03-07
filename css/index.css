@@ -85,6 +85,15 @@ strong {
     height: 100%;
 }
 
+.icons {
+    text-align: center;
+}
+
+.icons img {
+    width: 45px;
+    margin-right: 8px;
+}
+
 @media (hover: none) {
     .banner {
         filter: none;

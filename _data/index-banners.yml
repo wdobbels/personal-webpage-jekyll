@@ -23,11 +23,15 @@
 
 - title: Contact
   image: /assets/img/indexpage/bg_contact.jpg
-  text: 'Feel free to contact me about anything!<br/><br/>
-
-<strong>E-mail:</strong> <a href="mailto:wouter.dobbels@ugent.be">wouter.dobbels@ugent.be</a> <br/>
-<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/wouter-dobbels-1b4180106/">profile</a> <br/>
-<strong>Office:</strong> Astronomical Observatory, Ghent, Belgium'
   sideimage: /assets/img/indexpage/communicate.jpg
   extraclasses: dark-background
+  text: |
+    Feel free to contact me about anything!<br/><br/>
+    <strong>E-mail:</strong> <a href="mailto:wouter.dobbels@ugent.be">wouter.dobbels@ugent.be</a> <br/>
+    <strong>Office:</strong> Astronomical Observatory, Ghent, Belgium'
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/wouter-dobbels-1b4180106/" target="_blank"><img src="/assets/img/indexpage/linkedin.jpg"></a>
+      <a href="https://github.com/wdobbels" target="_blank"><img src="/assets/img/indexpage/github.png"></a>
+      <a href="https://orcid.org/0000-0001-5989-9450" target="_blank"><img src="/assets/img/indexpage/orcid.png"></a>
+    </div>
 
