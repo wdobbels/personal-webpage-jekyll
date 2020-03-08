@@ -9,7 +9,7 @@
         {% endif %}
     </div>
     {% if include.data.sideimage %}
-    <img class="side-image" src={{ include.data.sideimage | relative_url }}>
+    <img class="side-image" src="{{ include.data.sideimage | relative_url }}" alt="{{ include.data.sideimage-alt }}">
     {% endif %}
 </div>
 {% if include.data.link %}

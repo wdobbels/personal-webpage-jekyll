@@ -24,7 +24,7 @@
   subtitle: Let a robot map a contaminated site
   content:
     - title: Outline.
-      text: Sending humans to places of high radiation is dangerous. For our bachelor project, me and <a href="https://www.linkedin.com/in/jonasvandepitte/" target="_blank">Jonas</a> worked on a small raspberry pi controlled vehicle, that measured the radiation field. Most of the hardware was already in place, so the main focus was on the software. 
+      text: Sending humans to places of high radiation is dangerous. For our bachelor project, me and <a href="https://www.linkedin.com/in/jonasvandepitte/" target="_blank" rel="noopener">Jonas</a> worked on a small raspberry pi controlled vehicle, that measured the radiation field. Most of the hardware was already in place, so the main focus was on the software. 
     - title: Results.
       text: First, we set up a UDP connection with a host. The host could then make a continuously updating plot of the radiation field, and sends the input of an xbox controller to the robot. The raspberry pi on the robot sends these controls to various arduino's. We also measured how the robot's hardware influences the radiation measured by the Geiger counter.
     - title: Skills.
@@ -39,7 +39,7 @@
       text: You control a plasma ball with your mouse. Missiles are locked onto you, but these can be destroyed by shooting them (ctrl key to anchor). Unlock more abilities as the game progresses!
     - title: Skills.
       text: Unity game engine, vector art, C# programming
-    - title: <a href="https://harry-muana.itch.io/buzzball" target="_blank">Click here to play!</a>
+    - title: <a href="https://harry-muana.itch.io/buzzball" target="_blank" rel="noopener">Click here to play!</a>
       text: ""
   bgimg: bg_buzzball.jpg
   type: Hobby project

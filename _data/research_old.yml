@@ -52,7 +52,7 @@
     - title: Results.
       text: When there are large gradients in dust temperature, these dynamic grids lead to more accurate results, for a given number of cells. It is possible to mix density and temperature information, and combining both leads to a grid that works well on all tested cases.
     - title: Skills.
-      text: Working with a large C++ codebase (<a href="http://www.skirt.ugent.be/root/_landing.html" target="_blank">SKIRT</a>), using remote computers, shiny (R framework), writing a thesis
+      text: Working with a large C++ codebase (<a href="http://www.skirt.ugent.be/root/_landing.html" target="_blank" rel="noopener">SKIRT</a>), using remote computers, shiny (R framework), writing a thesis
   bgimg: slide_dynamicgrids.jpg
   type: Master's thesis
 
@@ -63,7 +63,7 @@
       text: "Observations of galaxies are not perfect: both statistical as well as systematic uncertainties are present. Moreover, light is the only thing we observe from galaxies; properties like stellar mass need to be inferred from models."
     - title: Outline.
       text: I have supervised two Master thesis students that applied machine learning tools on the EAGLE simulations. These cosmological simulations trace stars, gas and dark matter throughout the evolution of the universe. These can be used to train machine learning models which can then be applied on real galaxies.
-    - title: <a href="https://lib.ugent.be/catalog/rug01:002782902" target="_blank">Machine learning as an alternative for SED fitting.</a>
+    - title: <a href="https://lib.ugent.be/catalog/rug01:002782902" target="_blank" rel="noopener">Machine learning as an alternative for SED fitting.</a>
       text: In this work by Pieter Dewulf, the goal is to derive galaxy physical properties from a UV-FIR SED. We can reproduce the results of high-resolution SED fitting, but taking only a fraction of the computational time.
   bgimg: slide_eagle.jpg
   type: Supervision of Master's thesis
