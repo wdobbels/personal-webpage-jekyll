@@ -1,0 +1,83 @@
+media_presets:
+  wide_desktop: 'min-width: 1801px'
+  desktop: 'max-width: 1800px'
+  wide_tablet: 'max-width: 1200px'
+  tab920: 'max-width: 920px'
+  tablet: 'max-width: 900px'
+  tab768: 'max-width: 768px'
+  mobile: 'max-width: 600px'
+
+markup_presets:
+
+  default:
+    formats: [webp, original]
+  sideimage:
+    formats: [webp, original]
+    widths: [115, 230]
+    sizes: 
+      tab920: 25vw
+    size: 230px
+    attributes:
+      parent: 'class="side-image"'
+    fallback_width: 230
+    fallback_format: original
+  bannerbg:
+    formats: [webp, original]
+    widths: [600, 800, 1000, 1280]
+    size: 100vw
+    attributes:
+      parent: 'class="background-image"'
+    fallback_width: 1280
+    fallback_format: original
+  hovercard:
+    formats: [webp, original]
+    widths: [400, 600]
+    sizes:
+      tab768: 45vw
+    size: 31.33vw
+    attributes:
+      parent: 'class="background-image"'
+    fallback_width: 600
+    fallback_format: original
+  projectbg:
+    formats: [webp, original]
+    widths: [600, 800, 1000]
+    size: 70vw
+    attributes:
+      parent: 'class="background-image"'
+    fallback_width: 1000
+    fallback_format: original
+  interestslide:
+    formats: [webp, original]
+    widths: [500, 700]
+    sizes:
+      tab768: 92vw
+    size: 43vw
+    attributes:
+      parent: 'class="background-image"'
+    fallback_width: 700
+    fallback_format: original
+  moreimg:
+    formats: [webp, original]
+    widths: [315]
+    sizes:
+      tab768: 400px
+    size: 28.5vw
+    fallback_width: 315
+    fallback_format: original
+  bookstack:
+    formats: [webp, original]
+    widths: [600, 800, 1000, 1280]
+    sizes:
+      tab920: 65vw
+    size: 500px
+    fallback_width: 1280
+    fallback_format: original
+  bookcover:
+    formats: [webp, original]
+    widths: [300]
+    sizes:
+      tablet: 30vw
+    size: 340px
+    fallback_width: 300
+    fallback_format: original

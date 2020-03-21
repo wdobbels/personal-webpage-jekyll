@@ -1,5 +1,7 @@
 <a class="card-link" href="{{ page.url | append: include.data.href | relative_url }}">
-<div class="hover-card" style="background-image: url({{ '/assets/img/research/' | append: include.data.img | relative_url }})">
+<div class="hover-card">
+    <!-- <img class="background-image" src="{{ '/assets/img/research/' | append: include.data.img | relative_url }}" alt=""> -->
+    {% picture hovercard {{ '/assets/img/research/' | append: include.data.img }} --alt "" %}
     <div class="hover-overlay">
         <div class="hover-title">
             {{ include.data.title }}

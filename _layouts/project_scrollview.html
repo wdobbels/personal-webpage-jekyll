@@ -28,7 +28,7 @@ layout: default
     {% include project.html data=project %}
 {% endfor %}
 </div>
-<button class="arrow arrow-left"><i class="fas fa-caret-left fa-10x"></i></button>
-<button class="arrow arrow-right"><i class="fas fa-caret-right fa-10x"></i></button>
+<button class="arrow arrow-left" aria-label="Previous project"><i class="fas fa-caret-left fa-10x"></i></button>
+<button class="arrow arrow-right" aria-label="Next project"><i class="fas fa-caret-right fa-10x"></i></button>
 
 <script defer src="{% link /js/project-scroller.js %}"></script>

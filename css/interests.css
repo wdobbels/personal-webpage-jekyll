@@ -176,13 +176,18 @@ img.book-cover {
 
 /* Other resolutions */
 @media (max-width: 768px) {
+    section {
+        padding: 30px 4vw;
+    }
+
     .side-title {
         top: 10px;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, 20%);
+        writing-mode: horizontal-tb;
     }
 
-    .reading-content, .fixed-text {
+    .reading-content, .fixed-text, #more-container {
         margin-top: 50px;
     }
 

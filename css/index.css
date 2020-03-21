@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    height: 500px;
+    min-height: 500px;
     background-size: cover;
     background-position: center center;
     border-bottom: 5px solid black;
@@ -14,8 +14,10 @@
 }
 
 .side-image {
-    width: 230px;
-    height: 230px;
+    max-width: 230px;
+    max-height: 230px;
+    width: 25vw;
+    height: 25vw;
     margin: 5px 20px 5px 5px;
     flex-shrink: 0;
 }
@@ -91,4 +93,16 @@ strong {
 
 .icons img:hover {
     filter: invert(100%) brightness(150%);
+}
+
+@media (max-width: 600px) {
+    .banner.flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .side-image {
+        order: -1;
+        margin: 15px 20px;
+    }
 }
