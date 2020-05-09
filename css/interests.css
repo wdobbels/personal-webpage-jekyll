@@ -159,6 +159,7 @@ img.book-cover {
 
 #more-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .more-element {
