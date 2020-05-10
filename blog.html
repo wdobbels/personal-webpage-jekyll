@@ -1,0 +1,14 @@
+---
+layout: default
+title: Blog - Wouter Dobbels
+metadescription: "Blog of Wouter Dobbels: data analysis, astronomy, physics, machine learning and more."
+---
+
+<h3>List of blog posts:</h3>
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+</ul>

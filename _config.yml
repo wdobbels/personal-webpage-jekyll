@@ -29,7 +29,11 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/~wdobbels" # the subpath of your site, e.g. /blog
 
 # When running locally using bundle exec jekyll serve
-# livereload: true
+livereload: true
+
+collections:
+  posts:
+    permalink: /blog/:title:output_ext
 
 # Build settings
 #theme: minima
