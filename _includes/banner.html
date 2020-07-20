@@ -1,10 +1,12 @@
 {% if include.data.link %}
 <a class="banner-link" href={{ include.data.link | relative_url }}>
 {% endif %}
-<div class="banner flex {{ include.data.extraclasses }}">
-    {% picture bannerbg {{ include.data.image }} --alt "" %}
+<div class="banner flex {{ include.data.extraclasses }}" {% if include.data.image %} data-parallax="scroll" data-image-src=".{{ include.data.image }}" data-speed="0.7" {% endif %}>
     <div class="banner-textbox">
         <h1>{{ include.data.title }}</h1>
+        {% if include.data.subtitle %}
+        <h2>{{ include.data.subtitle }}</h2>
+        {% endif %}
         {% if include.data.text %}
         <p>{{ include.data.text }}</p>
         {% endif %}

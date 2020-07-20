@@ -4,7 +4,7 @@
     --light: #ccced1 !important;
     --col-medium: #898b91;
     --dark-light: #5a5f6e;
-    --dark: #36373d !important;
+    --dark: #2b2c2e !important;
     --darker: #191919;
     --darkest: #111111;
     --primary: #E9B353 !important;
@@ -55,12 +55,17 @@ nav h2 {
     position: absolute;
     margin: 0;
     left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .nav-links {
     position: absolute;
     margin: 0;
     right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
 }
 
 .nav-links li {
@@ -72,9 +77,10 @@ nav h2 {
 
 .nav-links .current {
     color: white;
+    font-weight: bold;
 }
 
-.nav-links a.current::before {
+/* .nav-links a.current::before {
     content: ">";
     font-size: 0.8em;
     vertical-align: middle;
@@ -87,7 +93,7 @@ nav h2 {
     vertical-align: middle;
     position: relative;
     top: -1px;
-}
+} */
 
 .background-image {
     position: absolute;
@@ -100,6 +106,21 @@ nav h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.button {
+    background-color: unset;
+    color: white;
+    border: 2px solid var(--primary);
+    padding: 5px 15px;
+    font-weight: bolder;
+    font-size: 1em;
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: rgba(233, 179, 83, 0.2)
 }
 
 @media (max-width: 960px) {
@@ -124,4 +145,8 @@ nav h2 {
 
 .free-space{
     height: 60px;
+}
+
+.mr-small {
+    margin-right: 10px;
 }

@@ -12,15 +12,20 @@
 
 - title: RESEARCH
   image: /assets/img/indexpage/bg_M33.jpg
-  text: Astronomical research projects I have worked on
-  link: "/research"
-  extraclasses: text-shadow
+  extraclasses: dark-background wide-box
+  text: |
+    In my research I use machine learning tools to study the relation between dust and stars in galaxies. The main goal of my PhD thesis is 
+    to predict far-infrared emission, on both global and resolved scales, based on the ultraviolet to near-infrared emission. <br/> <br/>
+    <a href="research/" class="button mr-small">Research overview</a> 
+    <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22%5EDobbels%2C%20W.%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" class="button">My papers</a>
 
 - title: PROJECTS
   image: /assets/img/projects/bg_projects.jpg
-  text: View some of the projects I have completed throughout my life
-  link: "#"
-  extraclasses: text-shadow
+  extraclasses: dark-background wide-box
+  text: |
+    I like programming, web development, game development, and robotics. Both during my studies as well as during my free time, I have completed various
+    projects involving these topics.<br/><br/>
+    <a href="projects/" class="button mr-small">View projects</a> 
 
 - title: Contact
   image: /assets/img/indexpage/bg_contact.jpg
