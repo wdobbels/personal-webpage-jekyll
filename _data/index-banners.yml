@@ -10,7 +10,7 @@
   sideimage-alt: A profile picture of me
   extraclasses: dark-background
 
-- title: RESEARCH
+- title: Research
   image: /assets/img/indexpage/bg_M33.jpg
   extraclasses: dark-background wide-box
   text: |
@@ -19,7 +19,7 @@
     <a href="research/" class="button mr-small">Research overview</a> 
     <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22%5EDobbels%2C%20W.%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" target="_blank" class="button">My papers</a>
 
-- title: PROJECTS
+- title: Projects
   image: /assets/img/projects/bg_projects.jpg
   extraclasses: dark-background wide-box
   text: |
