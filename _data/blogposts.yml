@@ -1,0 +1,7 @@
+- url: regression-towards-the-mean.html
+  title: Regression towards the mean
+  topics: regression, data analysis, machine learning
+  description: |
+    A lot of activities have a non-random component (e.g. skill) and a random component (luck). Observing an extreme case is 
+    on average due to a combination of this skill and luck component. When doing a new observation of the same case, it is typically 
+    more average, since the luck component is reset.

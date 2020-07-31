@@ -1,14 +1,22 @@
 ---
 layout: default
 title: Blog - Wouter Dobbels
+navtitle: blog
 metadescription: "Blog of Wouter Dobbels: data analysis, astronomy, physics, machine learning and more."
+stylefile: /css/bloglist.css
 ---
 
-<h3>List of blog posts:</h3>
-<ul>
-    {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </li>
+
+<div class="blog-body">
+    <h3>Occassionaly I write a blog post that could be useful to both future me as well as other people.</h3>
+
+    {% for post in site.data.blogposts %}
+    <a href="{{ '/blog/' | append: post.url | relative_url }}">
+        <div class="post-container">
+            <p class="post-title">{{ post.title }}</p>
+            <p class="post-topics">{{ post.topics }}</p>
+            <p class="post-description">{{ post.description }}</p>
+        </div>
+    </a>
     {% endfor %}
-</ul>
+</div>
