@@ -1,8 +1,11 @@
 ---
-layout: project_scrollview
+layout: default
 title: Projects - Wouter Dobbels
-stylefile: /css/projects.css
-datafile: projects
+stylefile: /css/banners.css
 navtitle: projects
 metadescription: "Non-research projects that I have worked on. "
 ---
+
+{% for banner in site.data.project-banners %}
+    {% include banner.html data=banner %}
+{% endfor %}

@@ -1,4 +1,4 @@
-media_presets:
+media_queries:
   wide_desktop: 'min-width: 1801px'
   desktop: 'max-width: 1800px'
   wide_tablet: 'max-width: 1200px'
@@ -7,7 +7,7 @@ media_presets:
   tab768: 'max-width: 768px'
   mobile: 'max-width: 600px'
 
-markup_presets:
+presets:
 
   default:
     formats: [webp, original]

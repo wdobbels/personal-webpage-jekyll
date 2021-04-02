@@ -13,6 +13,10 @@
     padding: 10px 15px 0;
 }
 
+.wide-box .banner-textbox {
+    max-width: 1000px;
+}
+
 .side-image {
     max-width: 230px;
     max-height: 230px;
