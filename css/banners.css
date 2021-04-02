@@ -3,18 +3,25 @@
     min-height: 500px;
     background-size: cover;
     background-position: center center;
-    border-bottom: 5px solid black;
+    border-bottom: 15px solid black;
+}
+
+.banner h2 {
+    margin-top: -30px;
+    font-style: italic;
+    font-size: 1em;
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 }
 
 .banner-textbox {
-    max-width: 720px;
+    width: 720px;
     /* min-width: 40%; */
     margin: 5px 20px;
     padding: 10px 15px 0;
 }
 
 .wide-box .banner-textbox {
-    max-width: 1000px;
+    width: 975px;
 }
 
 .side-image {
@@ -31,7 +38,11 @@
 }
 
 .dark-background .banner-textbox {
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.9);
+}
+
+.lighter-bg {
+    background-color: var(--dark);
 }
 
 .positioned-title .banner-textbox {

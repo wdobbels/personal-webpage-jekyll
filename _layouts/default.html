@@ -9,6 +9,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/png" href='{{ "/assets/favicon.png" | relative_url }}'/>
     <title>{{ page.title }}</title>
+    {% if page.nbblog %}
+    <link rel="stylesheet" href='{{ "/css/nb-default.css" | relative_url }}'>
+    {% endif %}
     <link rel="stylesheet" href="{{ '/css/default.css' | relative_url }}">
     {% if page.stylefile %}
     <link rel="stylesheet" href={{ page.stylefile | relative_url }}>
@@ -17,6 +20,34 @@
     <link rel="stylesheet" href="{{ '/revealjs/css/reveal.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/revealjs/css/theme/black.css' | relative_url }}" id="theme">
     <link rel="stylesheet" href="{{ '/css/slides.css' | relative_url }}">
+    {% endif %}
+    {% if page.nbblog %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href='{{ "/css/nb-blog.css" | relative_url }}'>
+
+    <!-- Loading mathjax macro -->
+    <!-- Load mathjax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+    <!-- MathJax configuration -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            // Center justify equations in code and markdown cells. Elsewhere
+            // we use CSS to left justify single line equations in code cells.
+            displayAlign: 'center',
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}},
+                linebreaks: { automatic: true }
+            }
+        });
+    </script>
     {% endif %}
 </head>
 <body>

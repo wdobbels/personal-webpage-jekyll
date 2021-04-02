@@ -10,3 +10,6 @@
 - codename: interests
   displayname: Interests
   url: /interests.html
+- codename: blog
+  displayname: Blog
+  url: /blog.html
