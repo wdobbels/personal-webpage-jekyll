@@ -21,7 +21,7 @@ body {
     /* font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; */
     font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
     line-height: 1.42857143;
-    font-size: 1.13rem;
+    font-size: 1.3rem;
     overflow-y: scroll;
 }
 
@@ -34,6 +34,10 @@ body {
 a {
     color: var(--primary);
     text-decoration: none;
+}
+
+li {
+    list-style: square;
 }
 
 h1, h2 {
@@ -110,7 +114,7 @@ nav h2 {
 }
 
 .button {
-    background-color: unset;
+    background-color: var(--darker);
     color: white;
     border: 2px solid var(--primary);
     padding: 5px 15px;

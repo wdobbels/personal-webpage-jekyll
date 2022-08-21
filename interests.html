@@ -71,7 +71,6 @@ metadescription: "My personal interests: gaming, reading, guitar, game developme
         <div class="more-element">
             {% picture moreimg {{ '/assets/img/interests/more/' | append: interest.image }} --alt {{ interest.title }} --img loading="lazy" %}
             <h2>{{ interest.title }}</h2>
-            <p>{{ interest.description }}</p>
         </div>
         {% endfor %}
     </div>

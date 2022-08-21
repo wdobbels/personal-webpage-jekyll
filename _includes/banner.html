@@ -11,9 +11,14 @@
         <p>{{ include.data.text }}</p>
         {% endif %}
     </div>
-    {% if include.data.sideimage %}
-    {% picture sideimage {{ include.data.sideimage }} --alt {{ include.data.sideimage-alt }} %}
-    {% endif %}
+    <div>
+        {% if include.data.sideimage %}
+        {% picture sideimage {{ include.data.sideimage }} --alt {{ include.data.sideimage-alt }} %}
+        {% endif %}
+        {% if include.data.sideimage-show-alt %}
+        <p class="image-label">{{ include.data.sideimage-alt }}</p>
+        {% endif %}
+    </div>
 </div>
 {% if include.data.link %}
 </a>

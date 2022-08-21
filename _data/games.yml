@@ -4,12 +4,9 @@
 - name: League of legends
   image: leagueoflegends.jpg
   description: As one of the largest online games ever, league of legends was the stepping stone for the MOBA genre. The game is played 5v5, with each player controlling one character from a top-down perspective.
-- name: Warframe
-  image: warframe.jpg
-  description: In warframe you play as a space ninja, eliminating hordes of enemies. The movement and combat are extremely fluent.
 - name: "The legend of Zelda: breath of the wild"
   image: zelda-botw.jpg
   description: "A huge open world game with tons of things to do: exploring, cooking, fighting, puzzles, or just enjoying the view. This one is a nintendo switch classic!"
 - name: "And others..."
   image: rocket-league.jpg
-  description: "Other games that make my hall of fame are: rocket league, team fortress 2, the witcher 3,world of warcraft, destiny 2, ..."
+  description: "Other games that make my hall of fame are: rocket league, team fortress 2, runescape, deep rock galactic, battlerite..."
